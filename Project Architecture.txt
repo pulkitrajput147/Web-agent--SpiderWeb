@@ -1,0 +1,21 @@
+Project Architecture Overview:
+
+1. Data Scraping and Storage Agent (Agent 1):
+
+Utilize a web scraping library (e.g., BeautifulSoup, Scrapy) to extract content from the specified website URL (www.knovatekinc.com).
+Structure the scraped data and save it in a JSON file.
+Implement error handling for cases like unsuccessful web scraping.
+
+2. Query Answering Agent (Agent 2):
+
+Design a vector database for efficient storage and retrieval of scraped data.
+Develop a query processing module to interact with the vector database.
+Implement the ability to answer user queries based on the stored data.
+
+3. Integration:
+
+Develop a communication interface between Agent 1 and Agent 2.
+Ensure that Agent 2 can retrieve relevant information from the vector database(Arango) based on user queries.
+
+
+
